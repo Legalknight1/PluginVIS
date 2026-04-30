@@ -1,0 +1,35 @@
+# PluginVisualizer Configuration
+# Visual inventory-based plugin configurator
+
+settings:
+  # GUI title prefix
+  prefix: "§8§l[§9PV§8§l] §r"
+  
+  # Whether to show plugins that aren't installed (grayed out)
+  show-uninstalled: true
+  
+  # Sound effects
+  sounds:
+    enabled: true
+    click: "UI_BUTTON_CLICK"
+    success: "ENTITY_EXPERIENCE_ORB_PICKUP"
+    error: "ENTITY_VILLAGER_NO"
+  
+  # Chat input timeout in seconds
+  chat-input-timeout: 30
+
+# Supported plugins configuration
+plugins:
+  luckperms:
+    enabled: true
+    max-permissions-per-page: 28
+  tab:
+    enabled: true
+    config-path: "plugins/TAB/config.yml"
+  essentials-chat:
+    enabled: true
+    config-path: "plugins/Essentials/config.yml"
+  worldedit:
+    enabled: true
+  multiverse:
+    enabled: true

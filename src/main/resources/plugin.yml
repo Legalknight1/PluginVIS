@@ -1,0 +1,46 @@
+name: PluginVisualizer
+version: '${project.version}'
+main: com.pluginvisualizer.PluginVisualizer
+api-version: '1.20'
+description: Visual inventory-based plugin configurator
+authors: [PluginVisualizer]
+
+softdepend:
+  - LuckPerms
+  - TAB
+  - WorldEdit
+  - Multiverse-Core
+  - Essentials
+
+commands:
+  pvis:
+    description: Open PluginVisualizer main menu
+    usage: /pvis
+    permission: pluginvisualizer.use
+  pluginvisualizer:
+    description: Open PluginVisualizer main menu
+    usage: /pluginvisualizer
+    permission: pluginvisualizer.use
+
+permissions:
+  pluginvisualizer.use:
+    description: Allows using PluginVisualizer
+    default: op
+  pluginvisualizer.luckperms:
+    description: Allows configuring LuckPerms via GUI
+    default: op
+  pluginvisualizer.tab:
+    description: Allows configuring TAB via GUI
+    default: op
+  pluginvisualizer.chat:
+    description: Allows configuring EssentialsX Chat via GUI
+    default: op
+  pluginvisualizer.worldedit:
+    description: Allows using WorldEdit via GUI
+    default: op
+  pluginvisualizer.multiverse:
+    description: Allows configuring Multiverse via GUI
+    default: op
+  pluginvisualizer.ranksetup:
+    description: Allows using 3-in-1 Rank Setup
+    default: op
